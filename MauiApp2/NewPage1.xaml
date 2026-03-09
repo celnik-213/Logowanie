@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.NewPage1"
+             Title="NewPage1">
+    <ScrollView>
+        <VerticalStackLayout
+        VerticalOptions="Center"
+        HorizontalOptions="Center"
+        Spacing="15"
+        Padding="30">
+
+            <Image 
+            Source="logowanie.png"
+            WidthRequest="100"
+         />
+            <Label 
+            Text="Zerejestruj się"
+            FontSize="32"
+            HorizontalOptions="Center"/>
+            <Grid RowDefinitions="40,50"
+                  ColumnDefinitions="200,200,200"
+                  ColumnSpacing="5">
+                <Label
+                Text="Imie:"
+                    Grid.Column="0"
+                    Grid.Row="0"/>
+                <Entry
+                Placeholder="Imie"
+                Keyboard="Default"
+                MaxLength="50"
+                Grid.Column="0"
+                Grid.Row="1"/>
+                <Label
+                Text="Email:"
+                Grid.Column="1"
+                Grid.Row="0"/>
+                <Entry 
+                Placeholder="Email" 
+                Keyboard="Email"
+                x:Name="Email"
+                Grid.Column="1"
+                Grid.Row="1"/>
+                <Label
+                Text="Hasło:"
+                Grid.Column="2"
+                Grid.Row="0"/>
+                <Entry 
+                Placeholder="Hasło"
+                IsPassword="True" 
+                x:Name="Haslo"
+                Grid.Column="2"
+                Grid.Row="1"/>
+            </Grid>
+            <Label
+                Text="Data Urodzenia:"/>
+            <DatePicker
+                MinimumDate="1950-01-01"
+                MaximumDate="2006-12-31"/>
+            <Picker Title="Płeć">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Kobieta</x:String>
+                        <x:String>Mężczyzna</x:String>
+                        <x:String>Inna</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Grid RowDefinitions="100"
+                  ColumnDefinitions="250,100">
+                <Label
+                Text="Akceptuję warunki użytkowania"
+                    Grid.Row="0"
+                    Grid.Column="0"/>
+            <CheckBox
+                x:Name="warunki"
+                Grid.Column="1"
+                Grid.Row="0"
+                CheckedChanged="CheckBox_Checked"/>
+            </Grid>
+            <Button
+             Text="Zarejestruj"
+            IsVisible="False"
+            x:Name="Zaloguj"
+            Clicked="OnButtonClicked"/>
+            <HorizontalStackLayout>
+                <Label
+            HorizontalOptions="Center"
+            Text="Nie masz konta? Zarejestruj się"
+            TextColor="Blue"
+            TextDecorations="Underline"    
+            Margin="0,10,0,0" />
+            </HorizontalStackLayout>
+
+
+        </VerticalStackLayout>
+
+
+    </ScrollView>
+</ContentPage>

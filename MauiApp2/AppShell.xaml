@@ -5,10 +5,25 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MauiApp2"
     Title="MauiApp2">
-
-    <ShellContent
-        Title="Home"
+    <TabBar>
+        <Tab Title="Home">
+        <ShellContent
+        Title="21.2"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+        </Tab>
+        <Tab Title="21.3">
+            <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:NewPage1}"
+            Route="MainPage" />
+        </Tab>
+        <Tab Title="21.4">
+            <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:NewPage2}"
+            Route="MainPage" />
+        </Tab>
+    </TabBar>
 
 </Shell>
