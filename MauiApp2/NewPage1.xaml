@@ -22,7 +22,7 @@
                   ColumnDefinitions="200,200,200"
                   ColumnSpacing="5">
                 <Label
-                Text="Imie:"
+                Text="Imie:" 
                     Grid.Column="0"
                     Grid.Row="0"/>
                 <Entry
