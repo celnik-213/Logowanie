@@ -2,23 +2,29 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
 
         public MainPage()
         {
             InitializeComponent();
+
         }
-
-        private void OnCounterClicked(object? sender, EventArgs e)
+        void Zmiana(object sender, TextChangedEventArgs e)
         {
-            count++;
+            var Emailwartosc = Email.Text;
+            var Password = Haslo.Text;
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
+            if (!string.IsNullOrWhiteSpace(Emailwartosc) && !string.IsNullOrWhiteSpace(Password))
+            {
+                Zaloguj.IsVisible = true;
+            }
             else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            {
+                Zaloguj.IsVisible = false;
+            }
+        }
+        void OnButtonClicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Zalogowano", "Zostałeś zalogowany pomyślnie", "OK");
         }
     }
 }
