@@ -28,3 +28,25 @@
         }
     }
 }
+/*
+****************************************************
+nazwa funkcji:        Zmiana
+opis funkcji:         Funkcja sprawdza czy pola Email oraz Hasło
+                      zostały wypełnione. Jeśli oba pola zawierają
+                      tekst, przycisk logowania zostaje pokazany.
+                      W przeciwnym wypadku przycisk jest ukrywany.
+parametry:            Brak
+zwracany typ i opis:  Brak
+autor:                Wiktor
+****************************************************
+
+****************************************************
+nazwa funkcji:        OnButtonClicked
+opis funkcji:         Funkcja obsługuje kliknięcie przycisku
+                      logowania. Po kliknięciu wyświetla komunikat
+                      informujący o pomyślnym zalogowaniu użytkownika.
+parametry:            Brak
+zwracany typ i opis:  Brak
+autor:                Wiktor
+****************************************************
+*/
