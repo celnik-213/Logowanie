@@ -45,3 +45,19 @@ public partial class NewPage2 : ContentPage
         }
     }
 }
+/*
+***********************************************
+    nazwa funkcji: PickerPriorytet
+    opis funkcji: Funkcja sprawdza czy która z opcji została wybrana a następnie wyświelta odpowiednie opcje.
+    parametry: Brak
+    zwracany typ i opis: Brak
+    autor: Wiktor
+************************************************
+***********************************************
+    nazwa funkcji: OnButtonClicked
+    opis funkcji: Funkcja po naciśnięciu wyświelta alert.
+    parametry: Brak
+    zwracany typ i opis: Brak
+    autor: Wiktor
+************************************************
+*/
