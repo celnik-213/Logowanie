@@ -23,3 +23,20 @@ public partial class NewPage1 : ContentPage
         DisplayAlert("Zarejestrowano", "Zostałeś zarejestrowany pomyślnie", "OK");
     }
 }
+
+/*
+***********************************************
+    nazwa funkcji: CheckBox_Checked
+    opis funkcji: Funkcja sprawdza czy Checkbox jest zaznaczony a następnie odpwoiednio wyświetla lub ukrywa przycisk zalougj się.
+    parametry: Brak
+    zwracany typ i opis: Brak
+    autor: Wiktor
+************************************************
+***********************************************
+    nazwa funkcji: OnButtonClicked
+    opis funkcji: Funkcja po naciśnięciu wyświelta alert.
+    parametry: Brak
+    zwracany typ i opis: Brak
+    autor: Wiktor
+************************************************
+*/
